@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("images/background.jpg"); /* твоя картинка */
+  background-image: url("background.jpg"); /* твоя картинка */
   background-size: cover;      /* растягивает картинку на весь экран */
   background-position: center; /* центрирует */
   background-attachment: fixed; /* фиксирует фон при скролле */
