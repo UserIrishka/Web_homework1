@@ -207,6 +207,29 @@
         }
 
 
+        .return-button {
+            display: block;
+            margin: 2.5rem auto;
+            padding: 1.2rem 2.5rem;
+            background-color: rgb(178, 131, 45);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 90%;
+            max-width: 350px;
+        }
+
+        .return-button:hover {
+            background-color: rgb(178, 131, 45);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+
         /* Адаптивность для мобильных устройств */
         @media (max-width: 768px) {
             body {
