@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  background-image: url("images/Stan_background3.png");
+  background-size: cover;
+  background-position: top center;
+  font-family: "Arial";
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: rgba(20, 20, 20, 0.85);
+  padding: 40px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  color: #ffd369;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  color: #ffd369;
+  transition: color 0.3s ease;
+  margin: 20px 0;
+}
+
+h3:hover {
+  color: #830009;
+}
+
+.stan-image {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  margin: 40px auto;
+}
+
+.stan-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 14px;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.stan-image .main-img {
+  opacity: 1;
+  z-index: 1;
+  width: 80%;
+  height: auto;
+}
+
+.stan-image .hover-img {
+  opacity: 0;
+  z-index: 2;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.stan-image:hover .main-img {
+  opacity: 0; /* скрываем первую картинку */
+}
+
+.stan-image:hover .hover-img {
+  opacity: 1; /* показываем вторую */
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+#backButton {
+  background: #ffad0a;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  margin: 50px auto 0;
+  padding: 15px 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+}
+
+/* Десктопная версия (1024px) */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1100px;
+    padding: 50px;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  #backButton {
+    font-size: 22px;
+    padding: 18px 50px;
+  }
+}
+
+/* Мобильная версия (768px) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .stan-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .stan-image img {
+    position: static;
+    transform: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  #backButton {
+    font-size: 18px;
+    padding: 12px 30px;
+    width: 80%;
+  }
+}
