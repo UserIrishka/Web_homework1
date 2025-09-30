@@ -8,12 +8,12 @@ body {
 }
 
 .container {
-  max-width: 1000px; /* ширина центральной части */
-  margin: 20px auto; /* выравнивание по центру */
-  background-color: rgba(20, 20, 20, 0.9); /* тёмный фон с прозрачностью */
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: rgba(20, 20, 20, 0.9);
   padding: 20px;
-  border-radius: 10px; /* скруглённые углы */
-  color: white; /* текст светлый */
+  border-radius: 10px;
+  color: white;
 }
 
 .header_container {
@@ -25,7 +25,7 @@ body {
 
 .left {
   flex: 1;
-  max-width: 50%; /* изображение занимает половину страницы */
+  max-width: 50%; /* картинка занимает половину страницы */
   display: flex;
 }
 
@@ -83,7 +83,7 @@ body {
 
 @media screen and (max-width: 400px) {
   .main-part img {
-    max-width: 90%; /* не более 90% ширины экрана */
+    max-width: 90%;
   }
 }
 
@@ -153,4 +153,67 @@ body {
 .card h3 {
   margin: 10px 0;
   color: #333;
+}
+
+/*Десктопная версия (1024px)*/
+@media screen and (min-width: 1024px) {
+  .header_container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .right h1 {
+    font-size: 3em;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .card {
+    width: 250px;
+  }
+}
+
+/*Мобильная версия (768px)*/
+@media screen and (max-width: 768px) {
+  .header_container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .left {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .right h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .right p {
+    font-size: 1em;
+    max-width: 100%;
+  }
+
+  .main-part img {
+    max-width: 90%;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card {
+    width: 90%;
+  }
 }
