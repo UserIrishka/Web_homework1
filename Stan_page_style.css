@@ -115,13 +115,13 @@ h3:hover {
 /* Мобильная версия (768px) */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .container {
-    max-width: 90%;
+    max-width: 95%;
     margin: 20px auto;
-    padding: 15px;
+    padding: 20px;
   }
 
   .stan-image {
@@ -151,15 +151,15 @@ h3:hover {
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   #backButton {
-    font-size: 18px;
+    font-size: 17px;
     padding: 12px 30px;
     width: 80%;
   }
