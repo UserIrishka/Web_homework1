@@ -1,0 +1,164 @@
+/* Фон страницы */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-image: url("room.jpg"); /* фон леса */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.5s ease; /* анимация для изменения фона */
+}
+
+/* Полупрозрачный блок с содержимым */
+.content {
+  background-color: rgba(0, 0, 0, 0.6); /* чёрный полупрозрачный фон */
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease; /* анимация для блока */
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  color: #ff69b4; /* розовый цвет */
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #ff69b4; /* розовый цвет для заголовков разделов */
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #ff69b4; /* розовый цвет для подзаголовков */
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+ul {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-align: left; /* список слева для лучшей читаемости */
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+li {
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* анимация для списка */
+}
+
+li:hover {
+  color: #ff1493; /* изменение цвета при наведении */
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px #ff69b4;
+  transition: transform 0.3s ease; /* анимация для изображения */
+}
+
+img:hover {
+  transform: scale(1.05); /* увеличение при наведении */
+}
+
+/* Стиль для кнопки */
+.button,
+.interactive-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #ff69b4; /* розовый цвет */
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #ff69b4;
+  transition: all 0.3s ease; /* плавный эффект при наведении */
+  cursor: pointer;
+}
+
+.button:hover,
+.interactive-button:hover {
+  background-color: #ff1493; /* тёмно-розовый при наведении */
+  box-shadow: 0 0 20px #ff69b4;
+  transform: scale(1.05); /* лёгкое увеличение */
+}
+
+/* блок для дополнительной информации */
+.hidden-info {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 105, 180, 0.2);
+  border-radius: 10px;
+}
+
+/* для адаптивности */
+/* Десктоп: ≥1024px */
+@media (min-width: 1024px) {
+  .content {
+    max-width: 800px;
+    padding: 30px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  img {
+    width: 350px;
+  }
+  ul {
+    max-width: 600px;
+  }
+}
+
+/* Мобильная: ≤768px */
+@media (max-width: 768px) {
+  .content {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 1em;
+  }
+  img {
+    width: 200px;
+  }
+  ul {
+    font-size: 1em;
+    text-align: center; /* центрируем для мобильных */
+  }
+  .button,
+  .interactive-button {
+    padding: 8px 16px;
+    font-size: 1em;
+  }
+}
