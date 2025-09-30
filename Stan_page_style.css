@@ -92,7 +92,7 @@ h3:hover {
 }
 
 /* Десктопная версия (1024px) */
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .container {
     max-width: 800px;
     padding: 30px;
@@ -113,7 +113,7 @@ h3:hover {
 }
 
 /* Мобильная версия (768px) */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     font-size: 20px;
   }
