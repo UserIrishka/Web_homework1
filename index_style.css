@@ -81,7 +81,7 @@ body {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
   .main-part img {
     max-width: 90%;
   }
@@ -156,7 +156,7 @@ body {
 }
 
 /*Десктопная версия (1024px)*/
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .header_container {
     flex-direction: row;
     align-items: stretch;
