@@ -119,8 +119,9 @@ h3:hover {
   }
 
   .container {
-    margin: 20px;
-    padding: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px;
   }
 
   .stan-image {
