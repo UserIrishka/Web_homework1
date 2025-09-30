@@ -119,7 +119,7 @@ h3:hover {
   }
 
   .container {
-    max-width: 95%;
+    max-width: 80%;
     margin: 20px auto;
     padding: 20px;
   }
@@ -151,7 +151,7 @@ h3:hover {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   h3 {
