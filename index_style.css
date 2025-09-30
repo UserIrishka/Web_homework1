@@ -179,28 +179,34 @@ body {
 /*Мобильная версия (768px)*/
 @media (max-width: 768px) {
   .header_container {
-    flex-direction: column;
-    min-height: auto;
-  }
-
-  .left {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
-    text-align: center;
   }
 
-  .right h1 {
+  .header_container .left {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .header_container .left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Правая часть — текст */
+  .header_container .right {
+    flex: 1;
+    color: #fff; /* или другой цвет, если на тёмном фоне */
+  }
+
+  .header_container .right h1 {
     font-size: 2em;
-    text-align: center;
-  }
-
-  .right p {
-    font-size: 1em;
-    max-width: 100%;
+    margin-bottom: 10px;
   }
 
   .main-part img {
