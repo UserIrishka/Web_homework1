@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  background-image: url("room.jpg"); /* фон леса */
+  background-image: url("back.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -18,7 +18,7 @@ body {
   margin: 50px auto;
   padding: 20px;
   border-radius: 15px;
-  transition: all 0.3s ease; /* анимация для блока */
+  transition: all 0.3s ease;
 }
 
 h1 {
@@ -49,7 +49,7 @@ p {
 ul {
   font-size: 1.1em;
   line-height: 1.5em;
-  text-align: left; /* список слева для лучшей читаемости */
+  text-align: left; /* список слева */
   margin: 0 auto;
   max-width: 500px;
 }
@@ -109,8 +109,19 @@ img:hover {
   border-radius: 10px;
 }
 
+/* Ссылки */
+a {
+  color: #ff69b4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff1493;
+}
+
 /* для адаптивности */
-/* Десктоп: ≥1024px */
+/* Десктоп: >=1024px */
 @media (min-width: 1024px) {
   .content {
     max-width: 800px;
@@ -130,7 +141,7 @@ img:hover {
   }
 }
 
-/* Мобильная: ≤768px */
+/* Мобильная: <=768px */
 @media (max-width: 768px) {
   .content {
     max-width: 90%;
@@ -154,7 +165,7 @@ img:hover {
   }
   ul {
     font-size: 1em;
-    text-align: center; /* центрируем для мобильных */
+    text-align: center;
   }
   .button,
   .interactive-button {
